@@ -1,11 +1,11 @@
 -- Data Exploration – Check Distinct Values
 SELECT Gender, Count(Gender) as TotalCount,
-Count(Gender) * 1.0 / (Select Count(*) from stg_Churn)  as Percentage
+Count(Gender)/ (Select Count(*) from stg_Churn)  as Percentage
 from customer_data
 Group by Gender;
 
 SELECT Contract, Count(Contract) as TotalCount,
-Count(Contract) * 1.0 / (Select Count(*) from stg_Churn)  as Percentage
+Count(Contract) / (Select Count(*) from stg_Churn)  as Percentage
 from customer_data
 Group by Contract;
 
@@ -16,7 +16,7 @@ from customer_data
 Group by Customer_Status;
 
 SELECT State, Count(State) as TotalCount,
-Count(State) * 1.0 / (Select Count(*) from stg_Churn)  as Percentage
+Count(State) / (Select Count(*) from stg_Churn)  as Percentage
 from customer_data
 Group by State
 Order by Percentage desc;
