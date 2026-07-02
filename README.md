@@ -20,7 +20,6 @@ Telecom companies lose recurring revenue every time a customer churns. This proj
 
 1. **Who is churning?** — which segments (contract type, payment method, internet type, tenure) show the highest churn rates
 2. **How much revenue is at risk?** — quantified, not just a percentage
-3. **Can we predict churn before it happens?** — using a classification model tuned for recall, since missing an at-risk customer is more costly than a false alarm
 
 ---
 
@@ -73,7 +72,7 @@ Telecom companies lose recurring revenue every time a customer churns. This proj
 - **Fiber optic customers churn more than any other internet type** (41.10% vs. 25.72% cable, 19.37% DSL), despite typically being a premium/higher-revenue service — worth investigating whether this is a pricing or service-quality issue.
 - **Mailed check users churn nearly 2.5x more than credit card users** (37.82% vs. 14.80%), suggesting payment friction or an older/lower-engagement customer segment.
 - **Revenue at risk:** churned customers represent 17.52% of total revenue.
-- Tenure and age group showed only modest variation in this dataset (~1–8 points spread) — weaker signal than contract type or payment method. *(See Limitations.)*
+- Tenure and age group showed only modest variation in this dataset (~1–8 points spread) — weaker signal than contract type or payment method.
 
 ---
 
